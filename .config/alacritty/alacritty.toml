@@ -1,48 +1,44 @@
-# Default colors
+# one-dark inspired
 [colors.primary]
-background = '#2c2c2c'
-foreground = '#d6d6d6'
+background = '#282c34'
+foreground = '#abb2bf'
 
-dim_foreground    = '#dbdbdb'
-bright_foreground = '#d9d9d9'
+dim_foreground    = '#828997'
+bright_foreground = '#e5c07b'
 
-# Cursor colors
 [colors.cursor]
-text   = '#2c2c2c'
-cursor = '#d9d9d9'
+text   = '#282c34'
+cursor = '#528bff'
 
-# Normal colors
 [colors.normal]
-black   = '#1c1c1c'
-red     = '#bc5653'
-green   = '#909d63'
-yellow  = '#ebc17a'
-blue    = '#7eaac7'
-magenta = '#aa6292'
-cyan    = '#86d3ce'
-white   = '#cacaca'
+black   = '#282c34'
+red     = '#e06c75'
+green   = '#98c379'
+yellow  = '#e5c07b'
+blue    = '#61afef'
+magenta = '#c678dd'
+cyan    = '#56b6c2'
+white   = '#dcdfe4'
 
-# Bright colors
 [colors.bright]
-black   = '#636363'
-red     = '#bc5653'
-green   = '#909d63'
-yellow  = '#ebc17a'
-blue    = '#7eaac7'
-magenta = '#aa6292'
-cyan    = '#86d3ce'
-white   = '#f7f7f7'
+black   = '#5c6370'
+red     = '#e06c75'
+green   = '#98c379'
+yellow  = '#e5c07b'
+blue    = '#61afef'
+magenta = '#c678dd'
+cyan    = '#56b6c2'
+white   = '#ffffff'
 
-# Dim colors
 [colors.dim]
-black   = '#232323'
-red     = '#74423f'
-green   = '#5e6547'
-yellow  = '#8b7653'
-blue    = '#556b79'
-magenta = '#6e4962'
-cyan    = '#5c8482'
-white   = '#828282'
+black   = '#1c1f24'
+red     = '#b24c50'
+green   = '#7fa97f'
+yellow  = '#c8a65e'
+blue    = '#3e80c5'
+magenta = '#9b59b6'
+cyan    = '#3ab0b3'
+white   = '#90969c'
 
 [cursor.style]
 blinking = "Always"
@@ -63,12 +59,13 @@ style = "Regular"
 history = 3000
 
 [window]
-opacity = 0.7
+opacity = 0.95
 
 [window.padding]
-x = 4
-y = 4
+x = 6
+y = 6
 
 [window.position]
 x = 2
 y = 2
+

@@ -2,7 +2,7 @@
 
 # Show only if something is building
 if pgrep -x "emerge" >/dev/null; then
-    echo "%{F#bdb2ff} emerging...%{F-}"
+    echo "%{F#e06c75} emerging%{F-}"
 else
     echo ""
 fi

@@ -1,22 +1,21 @@
 * {
   font:   "JetbrainsMono 11";
 
-  bg0     : #1a1b26;
-  bg1     : #1f2335;
-  bg2     : #24283b;
-  bg3     : #414868;
-  fg0     : #c0caf5;
-  fg1     : #a9b1d6;
-  fg2     : #737aa2;
-  red     : #424356;
-  green   : #9ece6a;
-  yellow  : #e0af68;
-  blue    : #7aa2f7;
-  magenta : #9a7ecc;
-  cyan    : #424356;
+  bg0     : #282c34;
+  bg1     : #353b45;
+  bg2     : #3e4451;
+  bg3     : #545862;
+  fg0     : #abb2bf;
+  fg1     : #b6bdca;
+  fg2     : #5c6370;
+  red     : #e06c75;
+  green   : #98c379;
+  yellow  : #e5c07b;
+  blue    : #c678dd;
+  magenta : #56b6c2;
 
-  accent: @red;
-  urgent: @yellow;
+  accent: @blue;
+  urgent: @red;
 
   background-color : transparent;
   text-color       : @fg0;
@@ -87,7 +86,7 @@ element alternate active {
 }
 
 element selected {
-  text-color       : @bg1;
+  text-color       : @bg0;
   background-color : @accent;
 }
 
@@ -108,5 +107,4 @@ scrollbar {
   handle-color : @fg2;
   padding      : 0 4px;
 }
-
 

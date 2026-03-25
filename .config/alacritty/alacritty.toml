@@ -1,71 +1,65 @@
-# one-dark inspired
-[colors.primary]
-background = '#282c34'
-foreground = '#abb2bf'
+# ==============================================================================
+#  ALACRITTY CONFIG - Gray-Slate Base + Deep Pastel Palette
+# ==============================================================================
 
-dim_foreground    = '#828997'
-bright_foreground = '#e5c07b'
+[window]
+# 0.92 opacity + Gray background = beautiful frosted effect in Picom
+opacity = 0.92
+padding = { x = 12, y = 12 }
+
+[scrolling]
+history = 5000
+
+# --- FONT CONFIGURATION ---
+[font]
+size = 12.0
+
+[font.normal]
+family = "JetBrains Mono"
+style = "Regular"
+
+[font.bold]
+family = "JetBrains Mono"
+style = "Bold"
+
+[font.italic]
+family = "JetBrains Mono"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrains Mono"
+style = "Bold Italic"
+
+# --- THE DEEP PASTEL PALETTE (Adjusted for Readability) ---
+[colors.primary]
+# Moved from #0d0d0d to a much softer Deep Slate Gray
+background = '#1a1b26' 
+foreground = '#d9e0ee' 
 
 [colors.cursor]
-text   = '#282c34'
-cursor = '#528bff'
+text   = '#1a1b26'
+cursor = '#f5c2e7' # Pastel Pink Beam
 
 [colors.normal]
-black   = '#282c34'
-red     = '#e06c75'
-green   = '#98c379'
-yellow  = '#e5c07b'
-blue    = '#61afef'
-magenta = '#c678dd'
-cyan    = '#56b6c2'
-white   = '#dcdfe4'
+black   = '#1e1e2e'
+red     = '#f28fad' 
+green   = '#abe9b3' 
+yellow  = '#fae3b0' 
+blue    = '#96cdfb' 
+magenta = '#f5c2e7' 
+cyan    = '#89dceb' 
+white   = '#d9e0ee'
 
 [colors.bright]
-black   = '#5c6370'
-red     = '#e06c75'
-green   = '#98c379'
-yellow  = '#e5c07b'
-blue    = '#61afef'
-magenta = '#c678dd'
-cyan    = '#56b6c2'
+black   = '#575268'
+red     = '#f28fad'
+green   = '#abe9b3'
+yellow  = '#fae3b0'
+blue    = '#96cdfb'
+magenta = '#f5c2e7'
+cyan    = '#89dceb'
 white   = '#ffffff'
-
-[colors.dim]
-black   = '#1c1f24'
-red     = '#b24c50'
-green   = '#7fa97f'
-yellow  = '#c8a65e'
-blue    = '#3e80c5'
-magenta = '#9b59b6'
-cyan    = '#3ab0b3'
-white   = '#90969c'
 
 [cursor.style]
 blinking = "Always"
 shape = "Beam"
-
-[font]
-size = 12.5
-
-[font.glyph_offset]
-x = 0
-y = 0
-
-[font.normal]
-family = "JetbrainsMono"
-style = "Regular"
-
-[scrolling]
-history = 3000
-
-[window]
-opacity = 0.95
-
-[window.padding]
-x = 6
-y = 6
-
-[window.position]
-x = 2
-y = 2
-

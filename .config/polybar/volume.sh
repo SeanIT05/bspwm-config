@@ -1,15 +1,19 @@
 #!/bin/bash
 
-# Get Master volume and mute state
-VOL=$(amixer get Master | awk -F'[][]' 'END{ print $2 }')
-MUTE=$(amixer get Master | awk -F'[][]' 'END{ print $4 }')
+# Get Volume and Mute state using pactl for PipeWire
+VOL=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '[0-9]+(?=%)' | head -n 1)
+MUTE=$(pactl get-sink-mute @DEFAULT_SINK@ | grep -Po '(?<=Mute: )(yes|no)')
 
-if [ "$MUTE" = "off" ]; then
-    ICON="婢"
+# Logic based on your original script
+if [ "$MUTE" = "yes" ]; then
+    # Muted Icon (Nerd Font: nf-md-volume_off)
+    ICON="󰝟"
+    VOL="MUTED"
 else
+    # Active Icon (Nerd Font: nf-fa-volume_up)
     ICON=""
+    VOL="$VOL%"
 fi
 
-# Output without trailing newline
+# Output formatted exactly like your original script
 printf "%s %s" "$ICON" "$VOL"
-

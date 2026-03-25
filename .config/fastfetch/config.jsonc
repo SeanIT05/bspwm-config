@@ -1,107 +1,91 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {}, 
   "display": {
     "separator": "  ",
     "color": {
       "title": "#f5c2e7",
-      "value": "#cdd6f4"
+      "keys": "#89dceb"
     }
   },
   "modules": [
     {
       "type": "title",
-      "keyColor": "#94e2d5",
-      "valueColor": "#f5c2e7"
+      "format": "{user-name-colored}@{host-name-colored}",
+      "color": {
+        "user": "#f5c2e7",
+        "at": "#d9e0ee",
+        "host": "#96cdfb"
+      }
+    },
+    {
+      "type": "separator"
     },
     {
       "type": "os",
-      "key": "  OS",
-      "keyColor": "#a6e3a1"
+      "key": "  OS      ",
+      "keyColor": "#96cdfb"
     },
     {
       "type": "kernel",
-      "key": "󰌢  Kernel",
-      "keyColor": "#89b4fa"
+      "key": "󰌢  Kernel  ",
+      "keyColor": "#abe9b3"
     },
     {
       "type": "packages",
       "key": "󰏓  Packages",
-      "keyColor": "#ffc8dd"
+      "keyColor": "#fae3b0"
     },
     {
       "type": "wm",
-      "key": "󰍹  WM",
+      "key": "󰍹  WM      ",
       "keyColor": "#f5c2e7"
     },
     {
       "type": "shell",
-      "key": "  Shell",
-      "keyColor": "#bdb2ff"
+      "key": "  Shell   ",
+      "keyColor": "#89dceb"
     },
     {
       "type": "cpu",
-      "key": "  CPU",
-      "keyColor": "#fab387"
+      "key": "  CPU     ",
+      "keyColor": "#f28fad"
     },
     {
       "type": "gpu",
-      "key": "󰍛  GPU",
-      "keyColor": "#94e2d5"
+      "key": "󰍛  GPU     ",
+      "keyColor": "#96cdfb"
     },
     {
       "type": "memory",
-      "key": "󰘚  RAM",
-      "keyColor": "#a6e3a1"
+      "key": "󰘚  RAM     ",
+      "keyColor": "#abe9b3"
     },
     {
       "type": "disk",
-      "key": "  Disk",
-      "keyColor": "#ffc8dd"
+      "key": "  Disk    ",
+      "keyColor": "#fae3b0"
     },
     {
       "type": "uptime",
-      "key": "  Uptime",
-      "keyColor": "#bdb2ff"
-    },
-    {
-      "type": "display",
-      "key": "󰹑  Display",
-      "keyColor": "#89b4fa"
-    },
-    {
-      "type": "localip",
-      "key": "󰩠  IP",
+      "key": "  Uptime  ",
       "keyColor": "#f5c2e7"
     },
     {
-      "type": "battery",
-      "key": "󰁹  Battery",
-      "keyColor": "#fab387"
+      "type": "display",
+      "key": "󰹑  Display ",
+      "keyColor": "#89dceb"
     },
     {
-      "type": "colors",
-      "paddingLeft": 4
-    }
-  ],
-  "colors": {
-    "1": "#f5c2e7",
-    "2": "#bde0fe",
-    "3": "#94e2d5",
-    "4": "#ffc8dd",
-    "5": "#ffafcc",
-    "6": "#a6e3a1"
-  },
-  "style": {
-    "keys": {
-      "color": {
-        "gradient": ["#bde0fe", "#bdb2ff"]
-      }
+      "type": "localip",
+      "key": "󰩠  IP      ",
+      "keyColor": "#f28fad"
     },
-    "values": {
-      "color": {
-        "gradient": ["#ffafcc", "#ffc8dd"]
-      }
+    "break",
+    {
+      "type": "colors",
+      "symbol": "circle",
+      "paddingLeft": 2
     }
-  }
+  ]
 }
-

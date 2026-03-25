@@ -17,12 +17,13 @@ unclutter &
 # -----------------------------
 # Wallpaper
 # -----------------------------
-feh --bg-scale ~/Wallpapers/wallpaper.png &  # set wallpaper
+feh --bg-fill --randomize ~/Wallpapers/ &  # set wallpaper
 
 # -----------------------------
 # Audio daemon
 # -----------------------------
 playerctld daemon &
+~/.config/bspwm/scripts/spotify_notifier.sh &
 
 # -----------------------------
 # Polybar
@@ -34,6 +35,11 @@ ${HOME}/.config/polybar/launch.sh &
 # -----------------------------
 picom --daemon &
 dunst &
+
+#-----------------------------
+# Gammastep 
+#-----------------------------
+gammastep &
 
 # -----------------------------
 # System tray

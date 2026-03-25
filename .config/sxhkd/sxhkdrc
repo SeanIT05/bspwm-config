@@ -118,15 +118,15 @@ super + Down
 super + Left
     playerctl previous
 
-# Volume controls (updated)
+# Volume controls (PipeWire via pactl)
 super + Page_Up
-    amixer -q set Master 5%+ unmute
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
 
 super + Page_Down
-    amixer -q set Master 5%- unmute
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
 
 super + End
-    amixer -q set Master toggle
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # ----------------------------------------------------------
 # SYSTEM COMMANDS
@@ -141,3 +141,6 @@ super + shift + Escape
 super + shift + e
     pkill -u $USER
 
+# Lock the screen with frosted Deep Pastel look
+super + shift + x
+    betterlockscreen -l dimblur
